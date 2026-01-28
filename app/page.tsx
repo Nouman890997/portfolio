@@ -19,20 +19,35 @@ export default function Home() {
                 Ranking businesses with Code & Data. I build full-stack web apps and optimize them for search engines.
               </p>
               
-              {/* Buttons */}
-              <div className="mt-8 flex gap-4">
+              {/* Buttons Section */}
+              <div className="mt-8 flex items-center gap-4">
+                
+                {/* Email Icon Button (Direct Gmail Link) */}
                 <a 
-                  href="mailto:noumannaeem050@gmail.com"
-                  className="rounded-full bg-teal-400/10 px-6 py-3 text-sm font-medium text-teal-300 ring-1 ring-inset ring-teal-400/20 hover:bg-teal-400/20 transition-all"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=noumannaeem050@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-center rounded-full bg-teal-400/10 p-4 text-teal-300 ring-1 ring-inset ring-teal-400/20 hover:bg-teal-400/20 hover:scale-110 transition-all"
+                  aria-label="Email Me"
+                  title="Send me an email"
                 >
-                  Contact Me
+                  {/* Mail SVG Icon */}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                  </svg>
                 </a>
+                
+                {/* GitHub Button */}
                 <a 
                   href="https://github.com/Nouman890997" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full bg-slate-800 px-6 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-700 transition-all"
+                  className="flex items-center gap-2 rounded-full bg-slate-800 px-6 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-700 transition-all"
                 >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
                   Visit GitHub
                 </a>
               </div>
@@ -58,13 +73,13 @@ export default function Home() {
                     </span>
                   </h3>
                   <p className="mt-2 text-sm leading-normal text-slate-400">
-                    A complete MERN stack web application built for pet services. Features include user authentication, database management for pet records, and a responsive UI.
+                  A full-stack pet services and adoption platform.Developed core features including user registration, pet listings, service booking, and an admin dashboard. Implemented secure RESTful APIs (JWT Auth) and role-based access control.
                   </p>
                   <ul className="mt-2 flex flex-wrap gap-2">
-                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">React.js</li>
-                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Node.js</li>
-                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">MongoDB</li>
-                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Express</li>
+                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">MERN Stack</li>
+                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">JWT Auth</li>
+                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">REST API</li>
+                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">React</li>
                   </ul>
                 </div>
               </div>
@@ -79,11 +94,12 @@ export default function Home() {
                     </span>
                   </h3>
                   <p className="mt-2 text-sm leading-normal text-slate-400">
-                    Developing a Python-based script to automate website audits, checking for broken links, meta tags, and performance issues.
+                    Developing a Python-based script to automate website audits, checking for broken links, meta tags, and performance issues using Beautiful Soup and Pandas.
                   </p>
                   <ul className="mt-2 flex flex-wrap gap-2">
                     <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Python</li>
                     <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">SEO Automation</li>
+                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Data Analytics</li>
                   </ul>
                 </div>
               </div>
@@ -91,7 +107,7 @@ export default function Home() {
             </div>
             
             <footer className="mt-20 text-sm text-slate-500">
-              <p>Designed & Built by Nouman Awan using Next.js & Tailwind.</p>
+              <p>Designed & Built by Nouman.co</p>
             </footer>
           </main>
         </div>
