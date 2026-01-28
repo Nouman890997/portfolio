@@ -2,73 +2,100 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white p-8 md:p-24">
-      {/* --- Section 1: Hero (Pehla Taasur) --- */}
-      <section className="max-w-4xl mx-auto text-center mb-20 pt-10">
-        <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 mb-6">
-          Ranking Businesses with Code & Data.
-        </h1>
-        <p className="text-xl text-gray-300 mb-8">
-          Hi, I'm <span className="text-blue-400 font-bold">Nouman Awan</span>. 
-          BSSE Grad & SEO Strategist. <br />
-          I bridge the gap between Development and Marketing.
-        </p>
-        <div className="flex gap-4 justify-center">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">
-            View My Projects
-          </button>
-          <button className="border border-gray-600 hover:border-gray-400 text-gray-300 px-6 py-3 rounded-lg font-medium transition">
-            Contact Me
-          </button>
-        </div>
-      </section>
-
-      {/* --- Section 2: Why Hire an Engineer? --- */}
-      <section className="max-w-4xl mx-auto mb-20">
-        <h2 className="text-3xl font-bold mb-8 border-b border-gray-800 pb-4">Why Hire an SEO Engineer?</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="p-6 bg-gray-900 rounded-xl border border-gray-800">
-            <h3 className="text-xl font-bold text-blue-400 mb-2">Technical SEO</h3>
-            <p className="text-gray-400">I fix code-level issues (Core Web Vitals, Schema) that marketers can't touch.</p>
-          </div>
-          <div className="p-6 bg-gray-900 rounded-xl border border-gray-800">
-            <h3 className="text-xl font-bold text-purple-400 mb-2">Automation</h3>
-            <p className="text-gray-400">I build Python scripts to automate competitor analysis and keyword research.</p>
-          </div>
-          <div className="p-6 bg-gray-900 rounded-xl border border-gray-800">
-            <h3 className="text-xl font-bold text-green-400 mb-2">Data-Driven</h3>
-            <p className="text-gray-400">No guesswork. I rely on APIs and Data Analytics to make decisions.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* --- Section 3: Projects (Saboot) --- */}
-      <section className="max-w-4xl mx-auto mb-20">
-        <h2 className="text-3xl font-bold mb-8 border-b border-gray-800 pb-4">Featured Projects</h2>
-        <div className="grid md:grid-cols-2 gap-6">
+    <main className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-teal-300 selection:text-teal-900">
+      <div className="max-w-screen-xl mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+        <div className="lg:flex lg:justify-between lg:gap-4">
           
-          {/* Project 1: Audit */}
-          <div className="group p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-blue-500 transition cursor-pointer">
-            <div className="flex justify-between items-start mb-4">
-              <h3 className="text-xl font-bold">SEO Audit Report</h3>
-              <span className="bg-yellow-900 text-yellow-200 text-xs px-2 py-1 rounded">Case Study</span>
+          {/* LEFT SIDE: Header & Bio */}
+          <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+            <div>
+              <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
+                Nouman Awan
+              </h1>
+              <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-100 sm:text-xl">
+                BSSE Graduate | MERN Stack & SEO Expert
+              </h2>
+              <p className="mt-4 max-w-xs leading-normal text-slate-400">
+                Ranking businesses with Code & Data. I build full-stack web apps and optimize them for search engines.
+              </p>
+              
+              {/* Buttons */}
+              <div className="mt-8 flex gap-4">
+                <a 
+                  href="mailto:noumannaeem050@gmail.com"
+                  className="rounded-full bg-teal-400/10 px-6 py-3 text-sm font-medium text-teal-300 ring-1 ring-inset ring-teal-400/20 hover:bg-teal-400/20 transition-all"
+                >
+                  Contact Me
+                </a>
+                <a 
+                  href="https://github.com/Nouman890997" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full bg-slate-800 px-6 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-700 transition-all"
+                >
+                  Visit GitHub
+                </a>
+              </div>
             </div>
-            <p className="text-gray-400 mb-4">Identified 15+ critical technical errors preventing a site from ranking. See the solution.</p>
-            <span className="text-blue-400 text-sm group-hover:underline">View Report &rarr;</span>
-          </div>
+          </header>
 
-          {/* Project 2: Email Bot */}
-          <div className="group p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-purple-500 transition cursor-pointer">
-            <div className="flex justify-between items-start mb-4">
-              <h3 className="text-xl font-bold">Python Email Automation</h3>
-              <span className="bg-green-900 text-green-200 text-xs px-2 py-1 rounded">Code</span>
+          {/* RIGHT SIDE: Projects */}
+          <main className="pt-24 lg:w-1/2 lg:py-24">
+            <h3 className="mb-8 text-sm font-bold uppercase tracking-widest text-slate-200">
+              Featured Projects
+            </h3>
+
+            <div className="flex flex-col gap-10">
+              
+              {/* Project 1: Petorious (FYP) */}
+              <div className="group relative grid grid-cols-1 gap-4 p-4 transition-all hover:bg-slate-800/50 rounded-md border border-slate-800/50 hover:border-slate-700">
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:drop-shadow-lg"></div>
+                <div className="z-10">
+                  <h3 className="font-medium leading-tight text-slate-200 group-hover:text-teal-300 focus-visible:text-teal-300">
+                    Petorious (Final Year Project)
+                    <span className="ml-3 inline-flex items-center rounded-full bg-teal-400/10 px-2 py-1 text-xs font-medium text-teal-300 ring-1 ring-inset ring-teal-400/20">
+                      Completed 🏆
+                    </span>
+                  </h3>
+                  <p className="mt-2 text-sm leading-normal text-slate-400">
+                    A complete MERN stack web application built for pet services. Features include user authentication, database management for pet records, and a responsive UI.
+                  </p>
+                  <ul className="mt-2 flex flex-wrap gap-2">
+                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">React.js</li>
+                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Node.js</li>
+                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">MongoDB</li>
+                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Express</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Project 2: SEO Tool */}
+              <div className="group relative grid grid-cols-1 gap-4 p-4 transition-all hover:bg-slate-800/50 rounded-md border border-slate-800/50 hover:border-slate-700">
+                <div className="z-10">
+                  <h3 className="font-medium leading-tight text-slate-200 group-hover:text-teal-300">
+                    Technical SEO Audit Tool
+                    <span className="ml-3 inline-flex items-center rounded-full bg-yellow-400/10 px-2 py-1 text-xs font-medium text-yellow-300 ring-1 ring-inset ring-yellow-400/20">
+                      🚧 Work in Progress
+                    </span>
+                  </h3>
+                  <p className="mt-2 text-sm leading-normal text-slate-400">
+                    Developing a Python-based script to automate website audits, checking for broken links, meta tags, and performance issues.
+                  </p>
+                  <ul className="mt-2 flex flex-wrap gap-2">
+                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Python</li>
+                    <li className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">SEO Automation</li>
+                  </ul>
+                </div>
+              </div>
+
             </div>
-            <p className="text-gray-400 mb-4">Built a bot to send 100+ personalized cold emails using SMTP and Pandas.</p>
-            <span className="text-purple-400 text-sm group-hover:underline">Check GitHub &rarr;</span>
-          </div>
-
+            
+            <footer className="mt-20 text-sm text-slate-500">
+              <p>Designed & Built by Nouman Awan using Next.js & Tailwind.</p>
+            </footer>
+          </main>
         </div>
-      </section>
+      </div>
     </main>
   );
 }
